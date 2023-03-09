@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>El mayor de los 3</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #F7F7F7;
+      }
+      
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      
+      .column {
+        flex: 1;
+      }
+      
+      .central-column {
+        max-width: 600px;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        box-shadow: 0 0 20px #BBBBBB;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      p {
+        font-size: 24px;
+        margin-bottom: 50px;
+        text-align: center;
+      }
+
+      button {
+        background-color: #008CBA;
+        color: #FFF;
+        font-size: 24px;
+        border: none;
+        border-radius: 10px;
+        padding: 15px 30px;
+        margin-bottom: 20px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      button:hover {
+        background-color: #005A6E;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column"></div>
+      <div class="column central-column">
+        <div class="content">
+          <h1>El mayor de los 3 números</h1>
+          <p>Haz clic en el botón para encontrar al mayor número.</p>
+          <button onclick="Mayor3()">Iniciar busqueda</button>
+        </div>
+      </div>
+      <div class="column"></div>
+    </div>
+
+    <script>
+      function Mayor3() {
+    const num1 = parseFloat(prompt("Ingresa un número"));
+    const num2 = parseFloat(prompt("Ingresa otro número"));
+    const num3 = parseFloat(prompt("Ingresa el número final"));
+    let mayor = num1;
+    if (num2 > mayor) {
+        mayor = num2;
+    }
+    if (num3 > mayor) {
+        mayor = num3;
+    }
+    alert("El mayor número es " + mayor);
+}
+    </script>
+  </body>
+</html>

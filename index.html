@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #F7F7F7;
+      }
+      
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      
+      .column {
+        flex: 1;
+      }
+      
+      .central-column {
+        max-width: 600px;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        box-shadow: 0 0 20px #BBBBBB;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .button-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .button {
+        background-color: #008CBA;
+        color: #FFF;
+        font-size: 24px;
+        border: none;
+        border-radius: 10px;
+        padding: 15px 30px;
+        margin-bottom: 60px;
+        display: block;
+        margin: 0 auto;
+        cursor: pointer;
+        text-align: center;
+      }
+      a {
+        text-decoration: none;
+        margin-bottom: 40px;
+      }
+      .button:hover {
+        background-color: #005A6E;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column"></div>
+      <div class="column central-column">
+        <div class="content">
+          <h1>Portal a las tres tareas</h1>
+          <div class="button-container">
+            <a href="Tarea1.html"><button class="button">Tarea 1</button></a>
+            <a href="Tarea2.html"><button class="button">Tarea 2</button></a>
+            <a href="Tarea3.html"><button class="button">Tarea 3</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="column"></div>
+    </div>
+  </body>
+</html>
